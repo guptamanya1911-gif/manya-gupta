@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsletter Subscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        input[type="email"] {
+            width: 250px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+        button {
+            background-color: lightblue;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            document.getElementById("message").innerText = 
+                "Thank you for subscribing, " + email + "!";
+            document.getElementById("email").value = "";
+        });
+    </script>
+
+</body>
+</html>

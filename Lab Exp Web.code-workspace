@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Lab Exp Web"
+		},
+		{
+			"path": "../../cse 21"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Lab Exp Web"
+	}
+}
